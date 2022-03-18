@@ -27,6 +27,16 @@ public class ProdutoTest {
 
         browser.findElement(By.cssSelector("button[type=\"submit\"]")).click();
 
+        //Adding product
+        browser.findElement(By.linkText("ADICIONAR PRODUTO")).click();
+
+        browser.findElement(By.id("produtonome")).sendKeys("Bola");
+        browser.findElement(By.id("produtovalor")).sendKeys("000");
+        browser.findElement(By.id("produtocores")).sendKeys("Preto");
+        browser.findElement(By.cssSelector("button[type=\"submit\"]")).click();
+
+
+
 
 
 
